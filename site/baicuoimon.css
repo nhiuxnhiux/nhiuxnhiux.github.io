@@ -1,0 +1,582 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.banner{
+	background: url(../img/subway-surfers-desktop-hero-2020-splash-final02.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/*menu*/
+.menu{
+	right: 20px;
+	top: 10px;
+	position: fixed;
+	z-index: 50000000000;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 22222;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Nunito', sans-serif;
+ }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*mot*/
+.mot{
+	width: 100%;
+	height: 25vh;
+	background: url(../img/download_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.motmot{
+	width: 50%;
+	height: 30vh;
+	top: 70px;
+	left: 35%;
+	position: absolute;
+}
+.motmot img{
+	width: 25.5%;
+	
+}
+.mothai{
+	position: absolute;
+	height: 30vh;
+	top: 83px;
+	left: 50%;
+}
+.mothai img{
+	width: 170px;
+}
+/*hai*/
+.hai{
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	background:url(../img/01.jpg);
+}
+.haihai{
+	width: 50%;
+	height: 60vh;
+	position: relative;
+	float: right;
+}
+.haimot {
+	width: 50%;
+	height: 60vh;
+	position: absolute;
+	float: left;
+}
+.haimot img{
+	width: 100%;
+	height: 60vh;
+	transform: skew(-8deg,0);
+	position: relative;
+	left: -30px;
+  
+}
+.haihai .hhchu{
+	position: absolute;
+	top: 20%;
+	left: 15%;
+}
+.haihai .hhchu p1{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #EAE4E4;
+	font-size: 25px;
+}
+.haihai .hhchu p{
+	color: #EAE4E4;
+	font-family: 'Karla', sans-serif;
+	font-size: 15px;
+}
+.haihai .hhchu h2{
+	font-family: 'Luckiest Guy', cursive;
+	color: #EAE4E4;
+	font-size: 60px;
+}
+
+.haihai .hhnut{
+	position: absolute;
+	bottom: 15%;
+	left: 15%;
+}
+.nut{
+	width: 200px;
+	height: 50px;
+	border: none;
+	outline: none;
+	background:rgba(0,0,0,0.00);
+	border: rgba(255,255,255,1.00) solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	cursor: pointer;
+	 -webkit-transition: width 5s; 
+    transition: width 5s;
+}
+.nut:hover{
+	background: rgba(255,255,255,1.00);
+	color: rgba(0,0,0,1.00);
+	width: 300px;
+	height: 50px;
+}
+/*ba*/
+.ba{
+	background: url(../img/ss_website_walmart_banner_background_final.jpg);
+	width: 100%;
+	height: 80vh;
+	position: relative;
+}
+.bahinh{
+	width: 50%;
+	position: relative;
+	left: 8%;
+	top: 5%;
+	animation-duration: 5s;
+	animation-name: bahinh;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform: translateY(10px)
+}
+@keyframes bahinh{
+	0%{transform: translateY(0px)}
+	20%{transform: translateY(10px)}
+	40%{transform: translateY(40px)}
+	60%{transform: translateY(60px)}
+	80%{transform: translateY(40px)}
+	90%{transform: translateY(10px)}
+	100%{transform: translateY(0px)}
+}
+.bahinh img{
+	width: 80%;
+	position: absolute;
+}
+.bachu{
+	width: 50%;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+}
+.bachu p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+.bachu p1{
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 60px;
+}
+.bachu p3, .bachu p2{
+	font-family: 'Nunito', sans-serif;
+	color: rgba(62,60,60,1.00);
+}
+.banut{
+	position: absolute;
+	left: 50%;
+	top: 65%;
+}
+#nutt{
+	width: 180px;
+	border: none;
+	outline: none;
+	background:rgba(0,0,0,0.00);
+	border: rgba(0,0,0,1.00) solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px solid 3px;
+	color: rgba(0,0,0,1.00);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	-webkit-transition: width 2s; 
+    transition: width 2s;
+}
+#nutt:hover{
+	background: rgba(0,0,0,1.00);
+	color: rgba(255,233,151,1.00);
+	border: rgba(255,255,255,1.00);
+	width: 250px;
+	height: 50px;
+}
+/*bon*/
+.bon{
+	background: url(../img/sanfrancisco.jpg);
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+}
+.bonhinh{
+	width: 50%;
+	height: 80vh;
+	position: relative;
+	left: 45%;
+	top: 20%;
+	box-sizing: border-box;
+	
+}
+.bonhinh img{
+	width: 80%;
+	position: absolute;
+	
+}
+.bonmay1{
+	width: 50%;
+	position: absolute;
+	top: 2%;
+	left: 85%;
+	
+}
+.bonmay2{
+	width: 50%;
+	position: absolute;
+	top: 8%;
+	left: 3%;
+}
+.bonmay1 img, .bonmay2 img{
+	width: 50%
+}
+.bonchu{
+	position: absolute;
+	width: 25%;
+	top: 40%;
+	left: 18%;
+}
+.bonchu p{
+	font-family:   'Luckiest Guy', cursive;
+	font-size: 55px;
+	color: rgba(255,255,255,1.00);
+	text-align: right;
+}
+.bonchu1{
+	position: absolute;
+	width: 25%;
+	top: 62%;
+	left: 18%;
+}
+.bonchu1 p{
+	font-family: 'Nunito', sans-serif;
+	color: rgba(239,239,239,1.00);
+	text-align: right;
+	font-size: 18px;
+}
+#bonnut{
+	width: 180px;
+	border: none;
+	outline: none;
+	background:rgba(0,0,0,0.00);
+	border: rgba(255,255,255,1.00) solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px solid 3px;
+	color: rgba(255,255,255,1.00);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	-webkit-transition: width 2s; 
+    transition: width 2s;
+}
+#bonnut:hover{
+	background: rgba(255,255,255,1.00);
+	color: rgba(232,149,88,1.00);
+	border: rgba(255,255,255,1.00);
+	width: 250px;
+	height: 50px;
+}
+.bonnut{
+	left: 27%;
+	position: absolute;
+	top: 77%;
+}
+/*nam*/
+.nam{
+	height: 500px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.namvideo{
+	width: 60%;
+	height: 500px;
+	overflow: hidden;
+}
+
+#myvideo{
+	float: left;
+	width: 100%;
+}
+.namhinh{
+	background: rgba(255,255,255,1.00);
+	width: 50%;
+	height: 500px;
+	position: absolute;
+	transform: skew(6deg,0);
+	left: 50%;
+	top: 0%;
+	
+}
+.namchu{
+	position: absolute;
+	width: 30%;
+	height: 500px;
+	left: 58%;
+	top: 33%;
+
+}
+.namchu h{
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	top: -30px;
+	font-size: 18px;
+	
+}
+.namchu h1{
+	font-family:   'Luckiest Guy', cursive;
+	font-size: 50px;
+}
+.namchu p{
+	font-family: 'Nunito', sans-serif;
+	line-height: 28px;
+}
+/*sau*/
+.sau{
+	width: 100%;
+	height: 70vh;
+	background: url(../img/01.jpg);
+	position: relative;
+	overflow: hidden;
+}
+.sauhinh{
+	width: 50%;
+	height: 70vh;
+	position: absolute;
+	top: 15%;
+	left: 63%;
+}
+.sauhinh img{
+	width: 50%;
+}
+.sauchu p{
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 15px;
+	top: 30%;
+	left: 23%;
+}
+.sauchu h{
+	position: absolute;
+	font-family: 'Luckiest Guy', cursive;
+	color: rgba(255,255,255,1.00);
+	font-size: 60px;
+	top: 38%;
+	left: 12%;
+}
+.saunut{
+	position: absolute;
+	top: 58%;
+	left: 25%;
+}
+#saunut{
+	width: 180px;
+	border: none;
+	outline: none;
+	background:rgba(0,0,0,0.00);
+	border: rgba(255,255,255,1.00) solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px solid 3px;
+	color: rgba(255,255,255,1.00);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	-webkit-transition: width 2s; 
+    transition: width 2s;
+}
+#saunut:hover{
+	background: rgba(255,255,255,1.00);
+	color: rgba(232,149,88,1.00);
+	border: rgba(255,255,255,1.00);
+	width: 210px;
+	height: 50px;
+}
+
+/*bay*/
+.bay{
+	width: 100%;
+	height: 75vh;
+	position: relative;
+	overflow: hidden;
+}
+.bayhinh{
+	width: 100%;
+	height: 75vh;
+	position: absolute;
+}
+.bayhinh img{
+	width: 50%;
+	height: 75vh;
+}
+.baychu{
+	background: rgba(255,255,255,1.00);
+	width: 50%;
+	height: 75vh;
+	position: absolute;
+	transform: skew(6deg,0);
+	left: 48%;
+}
+.chubay{
+	width: 40%;
+	height: 75vh;
+	position: absolute;
+	left: 45%;
+}
+.chubay h{
+	font-family: 'Luckiest Guy', cursive;
+	position: absolute;
+	font-size: 50px;
+	top: 25%;
+	left: 25%;
+}
+.chubay p{
+	position: absolute;
+	font-family: 'Nunito', sans-serif;
+	top: 40%;
+	left: 25%;
+	color: rgba(119,118,118,1.00);
+	line-height: 28px;
+}
+.baynut{
+	position: absolute;
+	top: 65%;
+	left: 55%;
+}
+#baynut{
+	width: 180px;
+	border: none;
+	outline: none;
+	background:rgba(0,0,0,1.00);
+	border: rgba(0,0,0,1.00) solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px solid 3px;
+	color: rgba(255,255,255,1.00);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	-webkit-transition: width 2s; 
+    transition: width 2s;
+}
+#baynut:hover{
+	background: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	border: rgba(255,255,255,1.00);
+	width: 210px;
+	height: 50px;
+}
+
+
+
+
+
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 400px;
+	background-color: #4D4747;
+	padding: 100px 15%;
+	font-family: 'Nunito', sans-serif;
+	box-sizing: border-box;
+}
+.footer .logo img{
+	width: 50%;
+}
+.fter1,  .fter4{
+	width: 30%;
+	float: left;
+	margin-left: 3%;
+	color: #ADAAAA;
+}
+.fter2, .fter3{
+	width: 10%;
+	float: left;
+	margin-left: 3%;
+	color: #FFFFFF;
+}
+
+/*dienthoai*/
+.dt{
+	position: absolute;
+	box-sizing: border-box;
+	top: 730px;
+	left: 70%;
+}
+
+
+
+
+
+
+
+
